@@ -1,0 +1,32 @@
+class Company {
+    void members() {
+        System.out.println("employees");
+    }
+}
+
+class Employee extends Company {
+    void salary() {
+        System.out.println("Salary = 20000");
+    }
+}
+
+class Programmer extends Company {
+    void bonus() {
+        System.out.println("Bonus = 5000");
+    }
+}
+
+class HierarchicalInheritance {
+    public static void main(String[] args) {
+        Employee e = new Employee();
+        Programmer p = new Programmer();
+
+        // Using Employee object
+        e.members();
+        e.salary();
+
+        // Using Programmer object
+        p.members();
+        p.bonus();
+    }
+}

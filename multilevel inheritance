@@ -15,7 +15,7 @@ class Programmer extends Employee {
     System.out.println("Bonus=5000");
 }
 }
-class single_inheritence {
+class multilevel_inheritence {
     public static void main(String args[]) {
         Programmer p=new Programmer();
         p.members();
